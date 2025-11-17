@@ -1,0 +1,1 @@
+In the presented data Sing_Sing, S_T and T_T are placeholders for Singlet to Singlet, Singlet to Triplet and Triplet to Triplet excitations performed with TDDFT. For every step (optimization, frequency calculation, etc.) the .fchk as well as the .log file are provided to give Access to the wavefunction, the geometry and the Level of Theory.
