@@ -11,14 +11,14 @@ rcParams['mathtext.it'] = 'Arial:italic'
 rcParams['mathtext.bf'] = 'Arial:bold'
 
 # --- Parameters ---
-input_file = r"experimental_data\Synthesis\ru_oh2_co_pnp\ir_raw_data.CSV"         # Input CSV file
-output_file = r"experimental_data\Synthesis\ru_oh2_co_pnp\ir_peak_list.CSV"        # Output CSV file for peaks
+input_file = r"experimental_data\synthesis\ru_cl2_co_pnp\ir\ir_data.CSV"         # Input CSV file
+output_file = r"experimental_data\synthesis\ru_cl2_co_pnp\ir\ir_peak_list.CSV"        # Output CSV file for peaks
 save_plot = False                # Set to True if you want to save the plot as PNG
 plot_file = "peaks_plot.png"     # Plot image filename (if saving)
 
 # --- Peak detection parameters ---
 prominence = 0.0075                 # Minimum prominence of peaks
-height = 0.01                     # Minimum height of peaks
+height = 0.014                     # Minimum height of peaks
 
 # --- Load data ---
 df = pd.read_csv(input_file)
@@ -52,8 +52,8 @@ for i, peak_idx in enumerate(peaks):
 
 plt.xlabel(r"wavenumber / cm$^{-1}$")
 plt.ylabel("absorbance / - ")
-plt.xlim(480, 4000)  # Common IR range
-plt.ylim(0, y.max() * 1.25)  # From 0 to 110% of max signal
+plt.xlim(x.min(), x.max())  # Common IR range
+plt.ylim(y.min() * 1.1, y.max() * 1.33)  # From 0 to 110% of max signal
 plt.gca().invert_xaxis()         # Invert x-axis
 plt.tight_layout()
 

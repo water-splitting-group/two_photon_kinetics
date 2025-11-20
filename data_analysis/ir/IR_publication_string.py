@@ -1,8 +1,8 @@
 import pandas as pd
 
 # --- Parameters ---
-input_csv = r"experimental_data\Synthesis\ru_oh2_co_pnp\ir_peak_list.csv"  # Input CSV with peaks
-output_csv = r"experimental_data\Synthesis\ru_oh2_co_pnp\ir_peak_list_publication.csv"  # Output file
+input_csv = r"experimental_data\synthesis\ru_cl2_co_pnp\ir\ir_peak_list.CSV"  # Input CSV with peaks
+output_csv = r"experimental_data\synthesis\ru_cl2_co_pnp\ir\ir_peak_list_publication.csv"  # Output file
 
 # --- Load peak data ---
 peaks_df = pd.read_csv(input_csv)
