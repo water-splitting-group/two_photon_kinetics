@@ -12,8 +12,6 @@ This directory contains the used scripts and files for the data evaluation used 
 
 `ms` contains the python script for the plotting of the ESI-MS data
 
-`o2` contains the python script for the plotting of the oxygen measurement data
-
 `ultra-fast_spec` contains the origin files used for the evalution of for the resonance Raman and emission spectroscopy (rr_and_emm), the transient absorption measurements (transient_abs) and UV/Vis spectroscopy (uv_vis), as well as the generated plots
 
 `uv_vis_and_solubility` contains the excel file and python script for the evaluation of the UV/Vis spectroscopy data

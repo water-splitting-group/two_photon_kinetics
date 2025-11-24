@@ -9,10 +9,6 @@ rcParams['mathtext.rm'] = 'Arial'
 rcParams['mathtext.it'] = 'Arial:italic'
 rcParams['mathtext.bf'] = 'Arial:bold'
 
-# ----------------------------------------
-# Example data (replace these with your own)
-# ----------------------------------------
-
 # Time points (shared for all yield curves)
 time = np.array([0, 1, 4, 24, 48])
 
@@ -30,9 +26,9 @@ err3 = np.array([0.5, 1.5, 9, 1.5, 0.5])
 
 plt.figure(figsize=(7, 5))
 
-plt.errorbar(time, y1, color="darkblue", yerr=err1, fmt="o", capsize=4, label="[Ru(CO)H(OH)(PNP)]")
-plt.errorbar(time, y2, color="#ff7f0e", yerr=err2, fmt="s", capsize=4, label="main side product")
-plt.errorbar(time, y3, color="darkgreen", yerr=err3, fmt="^", capsize=4, label="[Ru(CO)(OH)$_2$(PNP)]")
+plt.errorbar(time, y1, color="darkblue", yerr=err1, fmt="o-", capsize=4, label="[Ru(CO)H(OH)(PNP)]")
+plt.errorbar(time, y2, color="#ff7f0e", yerr=err2, fmt="s-", capsize=4, label="main side product")
+plt.errorbar(time, y3, color="darkgreen", yerr=err3, fmt="^-", capsize=4, label="[Ru(CO)(OH)$_2$(PNP)]")
 
 plt.xlabel("time / h")
 plt.ylabel("yield / %")
