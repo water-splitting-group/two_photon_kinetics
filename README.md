@@ -22,7 +22,7 @@ We actively encourage others to work on this interesting new avenue in automatiz
 
 # Dependencies
 
-Python code (Python >3.7) requires the following libraries:  
+Python code (Python >3.13) requires the following libraries: math, matplotlib, numpy, pandas, pybaselines, scipy
 
 
 # License
